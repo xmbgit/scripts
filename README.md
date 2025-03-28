@@ -12,13 +12,16 @@ if [ -d "$HOME/scripts" ]; then
 fi
 ```
 
-To view them and a kewl message add these to `.bashrc` file:
+The following only executes the encased commands if the shell is interactive. Otherwise, the `.bashrc` additions would interfere with non-interactive commands like `scp` and `rsync`
 ```bash
-echo -e "\e[31mRed Text\e[0m"
-echo -e "NOTICE: VIEW SCRIPTS WITH lscripts \n\e[31mSCRIPTS AVAILABLE ARE:\e[0m $(lscripts)\n"
+# If running interactively, execute the following commands 
 
-# Date
-echo "Today is $(date)"
-echo "Welcome Home Master $(whoami)"
+if [ -n "$PS1" ]; then 
+    echo -e "\e[31mRed Text\e[0m" 
+    echo -e "NOTICE: VIEW SCRIPTS WITH lscripts \n\e[31mSCRIPTS AVAILABLE ARE:\e[0m $(lscripts)\n" 
+    echo "Today is $(date)" 
+    echo "Welcome Home Master $(whoami)" 
+    echo "Executing Bash RC" 
+fi
 ```
 
