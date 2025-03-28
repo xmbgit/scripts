@@ -12,4 +12,5 @@ echo "'<command>' <comment>" | cat >> NOTEPAD.md
 'git rebase origin main' # Used on divergent branches to consolidate commit history
 'git config --global gpg.format ssh' # Tell GitHub to use SSH as Global Signing Format
 'git config --global user.signingkey </PATH/TO/.SSH/KEY.PUB>' # Tell GitHub to use <key.pub> as Key for Signing
+'echo "Current branch: $(git branch --show-current 2>/dev/null || echo 'not a repo')"' # Exports the Current Branch (I.E., "Main")
  ######
