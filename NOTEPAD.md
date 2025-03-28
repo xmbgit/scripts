@@ -8,3 +8,4 @@ echo <command> | cat >> NOTEPAD.md # NOTEPAD.sh is added to catch naming errors
 'git commit -m <message>' # Prepares updates to the current LINKED remote
 'git branch' # Checks what branch (if any) is currently set
 'git push origin main' # Pushes the commit to the designated branch
+'git fetch origin' # fetches the origin of the repo to get most recent updates
