@@ -1,5 +1,5 @@
 # Scripts
-A repository of scripts I use on my Ubuntu Server. Achitecture independent and used to automate many administrative tasks.
+This  repository consists  of scripts I use on my Ubuntu Server. Achitecture independent and used to automate many administrative tasks.
 
 Feel free to use them as you wish. Some are incredibly complex, more are incredibly simple and useful.
 
