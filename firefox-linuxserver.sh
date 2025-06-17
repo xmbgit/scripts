@@ -14,4 +14,4 @@ docker run -d \
   --shm-size="lgb" \
   linuxserver/firefox
 
-# open browser to `http://localhost:3000`
+# open browser to http://localhost:3xxx
