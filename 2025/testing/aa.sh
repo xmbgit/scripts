@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Purpose: Execute arp command with a user-selected network interface.
 
